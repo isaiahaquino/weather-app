@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./build/index.css">
-  <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-  <div id=""></div>
+    <div class="main">
+        
+        <div class="report">
+            <div class="box current currentContainer">
+                
+            </div>
+    
+            <div class="box hourly">
+                <div class="hourlyContainer">
+                    
+                </div>
+            </div>
+    
+            <div class="box daily">
+                <div class="dailyContainer">
+                    
+                </div>
+            </div>
+        </div>
 
-
-
-
-  <script src="./scripts.js"></script>
+        <form>
+            <input id="searchInput" type="text" placeholder="Enter A City">
+            <button type="submit" onclick="DisplayControl.search(event)"><img src="photos/magnify.png"></button>
+        </form>
+    </div>
 </body>
 </html>
